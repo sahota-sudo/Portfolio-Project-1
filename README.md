@@ -1,2 +1,11 @@
-# Portfolio-Project-1
+# Dataset Profile and Source
 This uses data is from the UCI Machine Learning Repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios, including the destination, current time, weather, and passenger, and then asks people whether they will accept the coupon if they are the driver.
+
+# Overview
+This report summarizes the findings from the survey of drivers. The goal is to understand what kinds of people are most likely to accept a coupon and what factors make them more or less likely to do so. Across the 12,684 survey responses, just under 57% of drivers accepted the coupon, but that overall number contains differences depending on: the driver, where they're going, and the kind of coupon.
+
+In terms of what types of coupons get accepted most, convenience and value were the most taken into considerations, without the acceptance rate of "Carry Out & Take Away" as well as "Inexpensive Restaurant (under $20)" having the highest acceptance rates at 74% and 71% respectively compared to "Coffee House", "Restaurant ($20-50)", "Bar" which had acceptance rates of 50%, 44%, and 41% respectively.
+
+The profile of those who accepted coupons the most were younger (under 21), single males. Income was also taken into account, but had a surprisingly weak effect as acceptance rates were relatively consistent across income levels. The time of day, weather, destination, and detail of who was in the car also had an affect. Coupons were most accepted during the afternoons, during sunny weather, where the drivers had no urgent destination, and had friends in the car with them.
+
+Overall, the single strongest predictor of acceptance is whether the driver already frequents that type of venue, with frequent bar-goers accepting bar coupons and frequent coffee drinks accepting coffe coupons. Afternoon, sunny days, and relaxed stinations are the ideal conditions for coupon delivery, and social situations where drivers are with friends in the car are more likely to say yes. One day expirations were highly preferred over 2-hour window coupons and convenience beat out value with fast-food type coupons outperforming upscale restaurants regardless of the discount size.
