@@ -97,3 +97,7 @@ Coffee house coupon acceptance is strongly predicted by three factors: **existin
 | Bar coupon ideal profile | Frequent bar-goers, under 30, no kids in car |
 | Coffee coupon ideal profile | Regular coffee drinkers, morning delivery, with friends |
 
+---
+
+## Next Steps
+Based on the analysis, going forward coupon delivery should be targeted more directly given the findings. To do this, they should build a simple customer profile filter that prioritizes sending bar coupons to frequent bar-goers under 30 and coffee coupons to regular coffee drinkers in the morning, which should meaningfully improve acceptance rates over the current broad distribution. Additionally, underperforming coupon types should be investigated; upscale restaurants (44%) and bars (41%) both sit well below the overall average, and a deeper dive into what demographics do accept them could surface a niche audience worth targeting rather than writing those coupon types off entirely. It would also be beneficial to build a predictive model with the future in mind, with clean features like visit frequency, age, passenger type, and time of day already showing strong signal, the dataset is well-positioned for a classification model (e.g. logistic regression or a decision tree) that could predict acceptance probability for any given driver and coupon combination in real time.
