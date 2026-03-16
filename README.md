@@ -1,5 +1,5 @@
 # Will the Customer Accept the Coupon?
-**Dataset:** UCI Machine Learning Repository — Driving Coupon Survey (Amazon Mechanical Turk)  ![`coupons.csv`](https://github.com/sahota-sudo/Portfolio-Project-1/blob/main/coupons.csv)
+**Dataset:** UCI Machine Learning Repository ; Driving Coupon Survey (Amazon Mechanical Turk)  ![`coupons.csv`](https://github.com/sahota-sudo/Portfolio-Project-1/blob/main/coupons.csv)
 
 **Notebook:** ![`Practical_Application_Response.ipynb`](https://github.com/sahota-sudo/Portfolio-Project-1/blob/main/Practical_Application_Response.ipynb)
 
@@ -19,12 +19,12 @@ The dataset contains **12,684 records** across five coupon types: Carry Out & Ta
 
 Two sources of missing data were identified and addressed:
 
-- **`car` column** — Over 99% of values were missing. This column was **dropped entirely**.
+- **`car` column** : Over 99% of values were missing. This column was **dropped entirely**.
 - **Frequency columns** (`Bar`, `CoffeeHouse`, `CarryAway`, `RestaurantLessThan20`, `Restaurant20To50`) — Each had 1–2% missing values, filled using the **column mode** (most common value) to preserve the ordinal distribution.
 
 ---
 
-## Problem 1 — Coupon Type Distribution
+## Problem 1 : Coupon Type Distribution
 
 ![Coupon Distribution](https://github.com/sahota-sudo/Portfolio-Project-1/blob/main/01_coupon_distribution.png)
 
@@ -32,7 +32,7 @@ Coffee House coupons were offered most frequently (3,996), followed by inexpensi
 
 ---
 
-## Problem 2 — Temperature Distribution
+## Problem 2: Temperature Distribution
 
 ![Temperature Distribution](https://github.com/sahota-sudo/Portfolio-Project-1/blob/main/02_temperature_histogram.png)
 
@@ -55,26 +55,26 @@ Age and frequency also compound the effect. Drivers who go to bars more than onc
 
 Three groups were compared:
 
-- **Group A** — Bar >1/month, no kids in car, not widowed: **71.3%**
-- **Group B** — Bar >1/month, under age 30: **72.2%**
-- **Group C** — Cheap restaurant >4/month, income under $50k: **60.1%**
+- **Group A** : Bar >1/month, no kids in car, not widowed: **71.3%**
+- **Group B** : Bar >1/month, under age 30: **72.2%**
+- **Group C** : Cheap restaurant >4/month, income under $50k: **60.1%**
 
 Groups A and B confirm that social context (no kids, younger) and existing habits are the clearest markers. Group C is notable — even drivers who aren't bar regulars accept coupons at an elevated rate if they're budget-conscious frequent diners, suggesting value-sensitivity plays a secondary role.
 
 ### Hypothesis: Who Accepts Bar Coupons?
 
-Bar coupon acceptance is driven primarily by **existing bar-going habits**, **younger age**, and **social context**. Drivers who already frequent bars don't need convincing — the coupon just makes the decision easier. Those traveling without kids and not widowed (i.e., likely younger and socially active) respond at rates above 70%. Budget-conscious diners also show elevated acceptance, pointing to a secondary value-seeking segment.
+Bar coupon acceptance is driven primarily by **existing bar-going habits**, **younger age**, and **social context**. Drivers who already frequent bars don't need convincing, the coupon just makes the decision easier. Those traveling without kids and not widowed (i.e., likely younger and socially active) respond at rates above 70%. Budget-conscious diners also show elevated acceptance, pointing to a secondary value-seeking segment.
 
 ---
 
 ## Independent Investigation: Coffee House Coupons
 ![Coffee House Independent Investigation](https://github.com/sahota-sudo/Portfolio-Project-1/blob/main/03_coffee.png)
 
-Coffee house coupons had an overall acceptance rate of **49.9%** — lower than carry-out or cheap restaurants, but with clear patterns that reveal who responds best.
+Coffee house coupons had an overall acceptance rate of **49.9%**; lower than carry-out or cheap restaurants, but with clear patterns that reveal who responds best.
 
 The pattern mirrors bar coupons: drivers who already visit coffee houses regularly accept at dramatically higher rates. Regular visitors (4–8 times/month) accept at **68.6%**, while those who never go accept at just **18.9%**. Coupon delivery to non-regulars is largely wasted.
 
-Acceptance peaks at **10AM (64.1%)** and drops through the day, falling to **41–44%** in the evening. This is intuitive — coffee is a morning behavior. Delivering coffee coupons at 6PM or 10PM is poorly timed.
+Acceptance peaks at **10AM (64.1%)** and drops through the day, falling to **41–44%** in the evening. This is intuitive, coffee is a morning behavior. Delivering coffee coupons at 6PM or 10PM is poorly timed.
 
 Drivers with **friends** in the car accept at **59.7%**, compared to **43.8%** for solo drivers. Traveling with a partner (57.1%) also boosts acceptance. A passenger makes stopping feel more like a social activity than an errand.
 
